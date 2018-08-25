@@ -12,6 +12,7 @@ import { HeaderCarouselComponent } from './header-carousel/header-carousel.compo
 import { ExhibitionsComponent } from './exhibitions/exhibitions.component';
 import { BooksComponent } from './books/books.component';
 import { LightMarginComponent } from './light-margin/light-margin.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LightMarginComponent } from './light-margin/light-margin.component';
     HeaderCarouselComponent,
     ExhibitionsComponent,
     BooksComponent,
-    LightMarginComponent
+    LightMarginComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
