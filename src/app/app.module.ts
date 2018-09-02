@@ -13,6 +13,9 @@ import { ExhibitionsComponent } from './exhibitions/exhibitions.component';
 import { BooksComponent } from './books/books.component';
 import { LightMarginComponent } from './light-margin/light-margin.component';
 import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+
 
 @NgModule({
   declarations: [
@@ -21,13 +24,15 @@ import { AboutComponent } from './about/about.component';
     ExhibitionsComponent,
     BooksComponent,
     LightMarginComponent,
-    AboutComponent
+    AboutComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
+    ScrollToModule.forRoot(),
     ToastModule.forRoot(),
     MDBBootstrapModulesPro.forRoot(),
     AgmCoreModule.forRoot({

@@ -1,0 +1,33 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-1 navbar-light grey lighten-5 fixed-top scrolling-navbar" [containerInside]="false">
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand [ngx-scroll-to]="'#home'" [ngx-scroll-to-offset]="-50"><a class="navbar-brand" href="#home">Bernhard Edmaier</a></mdb-navbar-brand>
+
+    <!-- Collapsible content -->
+    <links>
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active" [ngx-scroll-to]="'#gallery-one'" [ngx-scroll-to-offset]="-200" mdbWavesEffect>
+                <a class="nav-link waves-light" href="#gallery-one" #hide (click)="hideNav()">Gallery One<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" [ngx-scroll-to]="'#books'" [ngx-scroll-to-offset]="-35" mdbWavesEffect>
+                <a class="nav-link waves-light" href="#books" #hide (click)="hideNav()">Books</a>
+            </li>
+            <li class="nav-item" [ngx-scroll-to]="'#exhibitions'" [ngx-scroll-to-offset]="-60" mdbWavesEffect>
+                <a class="nav-link waves-light" href="#exhibitions" #hide (click)="hideNav()">Exhibitions</a>
+            </li>
+            <li class="nav-item" [ngx-scroll-to]="'#gallery-two'" [ngx-scroll-to-offset]="-55" mdbWavesEffect> 
+                <a class="nav-link waves-light" href="#gallery-two" #hide (click)="hideNav()">Gallery Two</a>
+            </li>
+            <li class="nav-item" [ngx-scroll-to]="'#about'" [ngx-scroll-to-offset]="-20" mdbWavesEffect>
+                <a class="nav-link waves-light" href="#about" #hide (click)="hideNav()">About</a>
+            </li>
+        </ul>
+        <!-- Links -->
+    </links>
+    <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
+

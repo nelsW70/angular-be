@@ -11,3 +11,75 @@ body {
 .controls-top {
     display: none;
 }
+
+/* exhibitions spacing below */ 
+
+.carousel-multi-item {
+    margin-bottom: 4.75rem;
+}
+
+/* book cover images */
+
+.books .img-fluid {
+    width: 100%;
+}
+
+/* exhibition carousel text */ 
+
+.carousel-multi-item .carousel-caption {
+    bottom: 10px;
+    left: 2.5%;
+    right: auto;
+    padding-top: 20px;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+/* exhibitions carousel indicators */
+
+.exhibitions .carousel-multi-item .carousel-indicators li {
+    background-color: rgba(34,34,34,.25);
+}
+
+.exhibitions .carousel-multi-item .carousel-indicators .active {
+    background-color: rgba(34,34,34,.45);
+}
+
+
+/* hero carousel thumb img sizes */
+
+@media screen and (max-width: 768px) {
+    .carousel-thumbnails .carousel-indicators img {
+        max-width: 5.25rem;
+    }
+  }
+
+@media screen and (max-width: 620px) {
+    .carousel-thumbnails .carousel-indicators img {
+        max-width: 3.25rem;
+    }
+    .carousel-thumbnails .carousel-indicators {
+        margin-bottom: -3rem;
+    }
+    .books-comp {
+        padding-top: 0 !important;
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    .carousel-thumbnails .carousel-indicators img {
+        max-width: 2.25rem;
+    }
+    .carousel-thumbnails .carousel-indicators {
+        margin-bottom: -2.5rem;
+    }
+  }
+
+  @media screen and (max-width: 290px) {
+    .carousel-thumbnails .carousel-indicators img {
+        max-width: 1.75rem;
+    }
+    .carousel-thumbnails .carousel-indicators {
+        margin-bottom: -2.5rem;
+    }
+  }
