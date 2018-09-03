@@ -1,8 +1,8 @@
 <!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-1 navbar-light grey lighten-5 fixed-top scrolling-navbar" [containerInside]="false">
+<mdb-navbar #link SideClass="navbar navbar-1 navbar-light grey lighten-5 fixed-top scrolling-navbar" [containerInside]="false">
 
     <!-- Navbar brand -->
-    <mdb-navbar-brand [ngx-scroll-to]="'#home'" [ngx-scroll-to-offset]="-50"><a class="navbar-brand" href="#home">Bernhard Edmaier</a></mdb-navbar-brand>
+    <mdb-navbar-brand [ngx-scroll-to]="'#home'" [ngx-scroll-to-offset]="-50"><a class="navbar-brand" href="#home" #hide (click)="hideNav()">Bernhard Edmaier</a></mdb-navbar-brand>
 
     <!-- Collapsible content -->
     <links>

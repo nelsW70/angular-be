@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,10 +7,9 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class NavbarComponent {
 
-  @ViewChild(NavbarComponent) link: NavbarComponent;
+  @ViewChild('link') link: NavbarComponent;
   hide: any;
 
-   
     hideNav() {
 
     this.link.hide();
